@@ -1,6 +1,7 @@
 <app-header></app-header>
 <div class="flexrow"> 
  <div class="container">
+  <app-friendbox></app-friendbox>
   <app-people *ngFor="let i of [0, 1, 2]" [text]="postTexts[i]" [pic]="postPics[i]" ></app-people>
  </div>
     <app-proposals></app-proposals>

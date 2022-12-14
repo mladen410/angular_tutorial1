@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { ProposalsComponent } from './proposals/proposals.component';
 import { ProfileRowComponent } from './profile-row/profile-row.component';
 import { PeopleComponent } from './people/people.component';
+import { FriendboxComponent } from './friendbox/friendbox.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -14,12 +17,14 @@ import { PeopleComponent } from './people/people.component';
     HeaderComponent,
     ProposalsComponent,
     ProfileRowComponent,
-    PeopleComponent
-
+    PeopleComponent,
+    FriendboxComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
